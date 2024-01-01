@@ -3,9 +3,8 @@ using namespace std;
 
 void printSeq(int i,int arr[],vector<int> temp,int n){
     if(i>=n) {
-        for(int j:temp) {
+        for(int j:temp)
             cout << j << " ";
-        }
         cout << endl;
         return;
     }

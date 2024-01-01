@@ -4,27 +4,22 @@ using namespace std;
 void merge(vector<int> &a, int l, int mid, int r)
 {
     vector<int> temp;
-    int left = l, right = r;
-    while (l <= mid && (mid + 1) <= r)
+    int left = l, right = mid + 1;
+    while (l <= mid && right <= r)
     {
-        if (a[l] <= a[mid + 1])
+        if (a[l] <= a[right])
             temp.push_back(a[l++]);
         else
-        {
-            temp.push_back(a[mid + 1]);
-            mid++;
-        }
+            temp.push_back(a[right++]);
     }
+
     while (l <= mid)
         temp.push_back(a[l++]);
 
-    while ((mid + 1) <= r)
-    {
-        temp.push_back(a[mid + 1]);
-        mid++;
-    }
+    while (right <= r)
+        temp.push_back(a[right++]);
 
-    for (int i = left; i <= right; i++)
+    for (int i = left; i <= r; i++)
         a[i] = temp[i - left];
 }
 

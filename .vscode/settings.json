@@ -1,6 +1,6 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "xstring": "cpp"
+        "ios": "cpp",
+        "xiosbase": "cpp"
     }
 }

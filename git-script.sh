@@ -16,4 +16,3 @@ if [ "$answer" = "n" ]; then
     read -p "Enter origin name: " message
     git push origin "$message"
 fi
-

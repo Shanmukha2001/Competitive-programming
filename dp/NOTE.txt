@@ -1,0 +1,6 @@
+for max and min
+ 
+1.represent everything in terms of index
+2.do all possible stuff on index(for example jumps 1/2)
+3.sum of all stuff(jumps) = max
+min of all stuff = min
